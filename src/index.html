@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Image Search</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -19,8 +19,19 @@
       </label>
       <button type="submit">Search</button>
     </form>
-    <span class="loader" style="display: none">Loading...</span>
+
     <ul class="gallery"></ul>
+
+    <div class="load-more-container">
+      <span class="loader" style="display: none">Loading...</span>
+      <button type="button" class="load-more" style="display: none">
+        Load more
+      </button>
+      <p class="end-message" style="display: none">
+        We're sorry, but you've reached the end of search results.
+      </p>
+    </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
