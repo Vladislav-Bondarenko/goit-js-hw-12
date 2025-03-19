@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Image Search</title>
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-DtRopbQG.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-RMVLDeT8.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-CThHvo19.css">
   </head>
   <body>
     <form class="form">
@@ -22,7 +22,18 @@
       </label>
       <button type="submit">Search</button>
     </form>
-    <span class="loader" style="display: none">Loading...</span>
+
     <ul class="gallery"></ul>
+
+    <div class="load-more-container">
+      <span class="loader" style="display: none">Loading...</span>
+      <button type="button" class="load-more" style="display: none">
+        Load more
+      </button>
+      <p class="end-message" style="display: none">
+        We're sorry, but you've reached the end of search results.
+      </p>
+    </div>
+
   </body>
 </html>
